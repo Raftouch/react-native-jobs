@@ -16,6 +16,7 @@ npx create-expo-app -e with-router
 ---
 
 - [x] initial setup
-- [x] set up app folder
+- [x] create app folder
 - [x] add dependencies
+- [x] set up connection through 'expo go' on mobile
 - [ ]
