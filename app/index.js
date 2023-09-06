@@ -1,4 +1,4 @@
-import { ScrollView, View } from 'react-native'
+import { FlatList, View } from 'react-native'
 import tw from 'tailwind-react-native-classnames'
 import Navbar from './components/Navbar'
 import NewTodo from './components/NewTodo'
@@ -31,11 +31,11 @@ const Home = () => {
     <View style={tw`h-full`}>
       <Navbar />
       <NewTodo onSubmit={addTodo} />
-      <ScrollView>
-        {todos.map((todo) => (
-          <Todo key={todo.id} todo={todo} />
-        ))}
-      </ScrollView>
+      <FlatList
+        data={todos}
+        renderItem={({ item }) => <Todo todo={item} />}
+        keyExtractor={(todo) => todo.id}
+      />
     </View>
   )
 }
