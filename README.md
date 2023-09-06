@@ -20,6 +20,5 @@ npx create-expo-app -e with-router
 - [x] add dependencies
 - [x] set up connection through 'expo go' on mobile
 - [x] set up tailwindcss
-- [x] create 'navbar' & 'new todo' components
-- [ ] add dynamics
-- [ ]
+- [x] create components
+- [x] add dynamics (create, remove)
